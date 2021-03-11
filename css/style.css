@@ -2501,6 +2501,12 @@ button[type="submit"] i {
   background-attachment: fixed !important;
 }
 
+.header-bar {
+  height: 60vh;
+  max-height: 400px;
+  background-attachment: fixed !important;
+}
+
 /* LOGO ITEM */
 .logo-item {
   width: 100%;
