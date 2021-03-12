@@ -6,14 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#fed300"/>
 <title>Kais Logistics | Logistic transport Company</title>
+<meta name="description" content="Contact Page| Kais Logistics is a full-service transportation provider">
+<meta name="keywords" content="Logisitcs">
 
 <!-- TWITTER META -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@Kais Logistics">
-<meta name="twitter:creator" content="@Kais Logistics">
-<meta name="twitter:title" content="Kais Logistics">
-<meta name="twitter:description" content="Kais Logistics | Logistic transport Company">
-<meta name="twitter:image" content="preview.html">
+<meta name="og:card" content="summary">
+<meta name="og:site" content="@Kais Logistics">
+<meta name="og:creator" content="@Kais Logistics">
+<meta name="og:title" content="Kais Logistics">
+<meta name="og:description" content="Kais Logistics | Logistics transport Company">
+<meta name="og:image" content="preview.html">
 
 <!-- FAVICON FILES -->
 <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
@@ -29,95 +31,117 @@
 <link rel="stylesheet" href="css/fancybox.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init('user_PQBOB3dOBfkErE3Eh5ve6');
+    })();
+</script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            // these IDs from the previous steps
+            emailjs.sendForm('service_v9q3w46', 'template_r85f96j', this)
+                .then(function() {
+                    alert('Your message sent.')
+                }, function(error) {
+                  alert('Please fill form correctly.')
+                });
+        });
+    }
+</script>
 </head>
 <body>
   <div class="preloader"> <img src="images/logo/kais2222.png" alt="Image"> </div>
   <!-- end preloader -->
   <div class="page-transition"></div>
-  <!-- end page-transition -->	
-  <aside class="side-widget">
-      <div class="inner">
-        <div class="logo"> <a href="index-2.html"><img src="images/logo/kais1111.png"alt="Image"></a> </div>
-        <!-- end logo -->
-        <div class="hide-mobile">
-         
-          <h6 class="widget-title">CONTACT INFO</h6>
-          <address class="address">
-          <p> +1 (513) 999 27 77<br>
-            <a href="#">info@kaislogistics.com</a></p>
-          </address>
-          <h6 class="widget-title">FOLLOW US</h6>
-          <ul class="social-media">
-            <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
-            <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-            <li><a href="#"><i class="lni lni-instagram"></i></a></li>
-            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-     </ul>
-        </div>
-        <!-- end hide-mobile -->
-        <div class="show-mobile">
-        
-          <!-- end custom-menu -->
-          <div class="site-menu">
-            <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="openings.html">See Openings</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <!-- end site-menu --> 
-        </div>
-        <!-- end show-mobile --> 
-        <small>© 2021 Kais Logistics | Logistic transport Company</small> </div>
-      <!-- end inner --> 
-    </aside>
-  <!-- end side-widget -->
-  <div class="topbar">
-    <div class="container">
-      <div class="phone">Call Us Now: <a href="#"> +1 (513) 999 27 77 </a></div>
-      <!-- end phone -->
-      <div class="email"> Email: <a href="#">info@kaislogistics.com</a> </div>
-      <!-- end email -->
-      <div class="social-media"> <span>Follow us</span>
+ <!-- end page-transition -->	
+<aside class="side-widget">
+  <div class="inner">
+    <div class="logo"> <a href="index.html"><img src="images/logo/kais1111.png"alt="Image"></a> </div>
+    <!-- end logo -->
+    <div class="hide-mobile">
+     
+      <h6 class="widget-title">CONTACT INFO</h6>
+      <address class="address">
+      <p> +1 (513) 999 27 77<br>
+        <a href="#">info@kaislogistics.com</a></p>
+      </address>
+      <h6 class="widget-title">FOLLOW US</h6>
+      <ul class="social-media">
+        <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+        <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
+        <li><a href="#"><i class="lni lni-instagram"></i></a></li>
+        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+ </ul>
+    </div>
+    <!-- end hide-mobile -->
+    <div class="show-mobile">
+    
+      <!-- end custom-menu -->
+      <div class="site-menu">
         <ul>
-          <li><a href="#"><i class="lni lni-facebook-filled"></i> <span>Facebook</span></a></li>
-          <li><a href="#"><i class="lni lni-twitter-original"></i> <span>Twitter</span></a></li>
-          <li><a href="#"><i class="lni lni-linkedin-original"></i> <span>Linkedin</span></a></li>
-          <li><a href="#"><i class="lni lni-instagram"></i> <span>Instagram</span></a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="openings.html">See Openings</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <!-- end social-media -->
+      <!-- end site-menu --> 
     </div>
-    <!-- end container --> 
+    <!-- end show-mobile --> 
+    <small>© 2021 Kais Logistics | Logistic transport Company</small> </div>
+  <!-- end inner --> 
+</aside>
+<!-- end side-widget -->
+<div class="topbar">
+<div class="container">
+  <div class="phone">Call Us Now: <a href="#"> +1 (513) 999 27 77 </a></div>
+  <!-- end phone -->
+  <div class="email"> Email: <a href="#">info@kaislogistics.com</a> </div>
+  <!-- end email -->
+  <div class="social-media"> <span>Follow us</span>
+    <ul>
+      <li><a href="#"><i class="lni lni-facebook-filled"></i> <span>Facebook</span></a></li>
+      <li><a href="#"><i class="lni lni-twitter-original"></i> <span>Twitter</span></a></li>
+      <li><a href="#"><i class="lni lni-linkedin-original"></i> <span>Linkedin</span></a></li>
+      <li><a href="#"><i class="lni lni-instagram"></i> <span>Instagram</span></a></li>
+    </ul>
   </div>
-  <!-- end topbar -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="inner">
-        <div class="logo"> <a href="index.html"> <img src="images/logo/3333.png"  alt="Kais Logistics"> </a> </div>
-        <!-- end logo -->
-   
-        <!-- end custom-menu -->
-        <div class="site-menu">
-          <ul>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="openings.html">See Openings</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <!-- end site-menu -->
-        <div class="hamburger-menu"> <span></span> <span></span> <span></span> </div>
-        <!-- end hamburger-menu -->
-      <div class="navbar-button"> <a href="openings.html">Currently hiring</a> </div>
-        <!-- end navbar-button --> 
-      </div>
-      <!-- end inner --> 
+  <!-- end social-media -->
+</div>
+<!-- end container --> 
+</div>
+<!-- end topbar -->
+<nav class="navbar">
+<div class="container">
+  <div class="inner">
+    <div class="logo"> <a href="index.html"> <img src="images/logo/3333.png"  alt="Kais Logistics"> </a> </div>
+    <!-- end logo -->
+
+    <!-- end custom-menu -->
+    <div class="site-menu">
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="openings.html">See Openings</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-    <!-- end container --> 
-  </nav>
-  <!-- end navbar -->
+    <!-- end site-menu -->
+    <div class="hamburger-menu"> <span></span> <span></span> <span></span> </div>
+    <!-- end hamburger-menu -->
+    <div class="navbar-button"> <a href="openings.html">Currently hiring CDL A class drivers</a> </div>
+    <!-- end navbar-button --> 
+  </div>
+  <!-- end inner --> 
+</div>
+<!-- end container --> 
+</nav>
+<!-- end navbar -->
 <header class="page-header header-bar" data-background="images/slide.jpeg">
   <div class="container">
     <h1>Contact</h1>
@@ -172,24 +196,24 @@ Email: <a href="#">info@kaislogistics.com</a>
         <!-- end section-title --> 
       </div>
       <!-- end col-12 -->
-		
+		<form id="contact-form">
       <div class="col-12">
 		  <div class="contact-form">
 		  	<div class="row inner">
 			  	<div class="form-group col-lg-4">
-				<input type="text" placeholder="Complate Name">
+				<input  type="text" name="name" placeholder="Complate Name">
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-lg-4 col-md-6">
-				<input type="text" placeholder="Email Address">
+				<input type="email"  name="email" placeholder="Email Address">
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-lg-4 col-md-6">
-				<input type="text" placeholder="Phone No">
+				<input type="text" name="phone" placeholder="Phone No">
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-12">
-					<textarea placeholder="Message"></textarea>
+					<textarea name="message" placeholder="Message"></textarea>
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-12">
@@ -201,6 +225,7 @@ Email: <a href="#">info@kaislogistics.com</a>
 		  </div>
 		  <!-- end contact-form -->
       </div>
+    </form>
       <!-- end col-12 -->
     </div>
     <!-- end row --> 

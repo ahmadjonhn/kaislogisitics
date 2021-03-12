@@ -6,14 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="theme-color" content="#fed300"/>
 <title>Kais Logistics | Logistic transport Company</title>
+<meta name="description" content="Vacancy Page | Kais Logistics is a full-service transportation provider">
+<meta name="keywords" content="Logisitcs">
 
 <!-- TWITTER META -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@Kais Logistics">
-<meta name="twitter:creator" content="@Kais Logistics">
-<meta name="twitter:title" content="Kais Logistics">
-<meta name="twitter:description" content="Kais Logistics | Logistic transport Company">
-<meta name="twitter:image" content="preview.html">
+<meta name="og:card" content="summary">
+<meta name="og:site" content="@Kais Logistics">
+<meta name="og:creator" content="@Kais Logistics">
+<meta name="og:title" content="Kais Logistics">
+<meta name="og:description" content="Kais Logistics | Logistics transport Company">
+<meta name="og:image" content="preview.html">
 
 <!-- FAVICON FILES -->
 <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
@@ -29,6 +31,30 @@
 <link rel="stylesheet" href="css/fancybox.min.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/integration
+        emailjs.init('user_PQBOB3dOBfkErE3Eh5ve6');
+    })();
+</script>
+
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          // these IDs from the previous steps
+          emailjs.sendForm('service_v9q3w46', 'template_ppei31h', this)
+              .then(function() {
+                  alert('Thank you sir, we will contact you as soon as possible.')
+              }, function(error) {
+                alert('Fill the form correctly.')
+              });
+      });
+  }
+</script>
+
 </head>
 <body>
   <div class="preloader"> <img src="images/logo/kais2222.png" alt="Image"> </div>
@@ -110,7 +136,7 @@
         <!-- end site-menu -->
         <div class="hamburger-menu"> <span></span> <span></span> <span></span> </div>
         <!-- end hamburger-menu -->
-        <div class="navbar-button"> <a href="contact.html">GET A QUOTE</a> </div>
+        <div class="navbar-button"> <a href="contact.html">Currently hiring CDL A class drivers   </a> </div>
         <!-- end navbar-button --> 
       </div>
       <!-- end inner --> 
@@ -129,6 +155,11 @@
 <section class="content-section no-spacing" data-background="#f9f7ef">
         <div class="container">
           <div class="row align-items-center no-gutters">
+                <div class="section-title">
+                        <figure><img src="images/section-title-shape.png" alt="Image"></figure>
+                          <p>We are looking for candidates who not only work hard but also share our values of honesty, integrity, and respect for others.</p>
+                      </div>
+        
             <div class="col-lg-6">
               <div class="side-list">
                 <h2>Job title: Driver </h2>
@@ -159,11 +190,7 @@
 <section class="content-section">
         <div class="container">
           <div class="row">
-                <div class="section-title">
-                        <figure><img src="images/section-title-shape.png" alt="Image"></figure>
-                          <p>We are looking for candidates who not only work hard but also share our values of honesty, integrity, and respect for others.</p>
-                      </div>
-        
+               
                <!-- end col-6 --> 
                <div class="col-lg-4 col-md-6">
                     <div class="service-box">
@@ -219,29 +246,31 @@
 		 <div class="col-12">
         <div class="section-title text-left">
 			<h6>Are you interested?</h6>
-          <h2>Feel the form, please</h2>
+          <h2>To get more information, call to +1 866 513 41 50 or fill the form.
+          </h2>
         </div>
         <!-- end section-title --> 
       </div>
       <!-- end col-12 -->
-		
+		<form id="contact-form">
       <div class="col-12">
 		  <div class="contact-form">
 		  	<div class="row inner">
 			  	<div class="form-group col-lg-4">
-				<input type="text" placeholder="Name">
+				<input type="text" name="name" placeholder="Name">
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-lg-4 col-md-6">
-				<input type="text" placeholder="Email Address">
+				<input type="email" name="email" placeholder="Email Address">
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-lg-4 col-md-6">
-				<input type="text" placeholder="Phone No">
+				<input type="text" name="phone" placeholder="Phone No">
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-12">
                         <input type="file" placeholder="Resume">
+                        CLD A Licence
 				</div> 
 				<!-- end form-group -->
 			  	<div class="form-group col-12">
@@ -254,6 +283,7 @@
 		  <!-- end contact-form -->
       </div>
       <!-- end col-12 -->
+    </form>
     </div>
     <!-- end row --> 
   </div>
